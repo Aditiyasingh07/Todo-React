@@ -17,7 +17,7 @@ function TodoItem({ todo }) { // Destructure the props object to access todo
 
   return (
     <div
-      className={`flex border border-black/10 rounded-lg px-3 py-1.5 w-1/2 m-auto justify-between bg-slate-200 text-black ${
+      className={`flex border border-black/10 rounded-lg px-3 py-1.5 m-auto justify-between sm:w-1/2 bg-slate-200 text-black ${
         todo.completed ? "bg-[#c6e9a7]" : "bg-[#ccbed7]"
       }`}
     >
@@ -29,7 +29,7 @@ function TodoItem({ todo }) { // Destructure the props object to access todo
       />
       <input
         type="text"
-        className={`border text-black outline-nono bg-transparent rounded-lg ${
+        className={`border sm:text-black outline-nono bg-transparent rounded-lg ${
           isTodoEditable ? "border-black/10 px-2" : "border-transparent"
         } ${todo.completed ? "line-through" : ""}`}
         value={todoMsg}

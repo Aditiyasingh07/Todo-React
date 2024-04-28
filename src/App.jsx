@@ -42,7 +42,7 @@ function App() {
 
   return (
     <TodoProvider value={{ todos, addTodo, updateTodo, deleteTodo, toggleComplete }}>
-      <div className="bg-[#172842] w-1/2 m-auto p-5 my-5 rounded-3xl h-screen">
+      <div className="bg-[#172842] sm:w-1/2 sm:p-5 m-auto sm:my-5 my-0 p-5 sm:rounded-3xl h-screen">
         <div className="w-full mx-auto shadow-md rounded-lg">
           <h1 className="text-2xl text-white font-bold text-center mb-8 mt-2">Manage Your Todos</h1>
           <div className="mb-4">

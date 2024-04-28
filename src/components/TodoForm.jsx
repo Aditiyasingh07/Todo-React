@@ -3,6 +3,7 @@ import { useTodo } from '../context/index';
 
 function TodoForm() {
     const [todoText, setTodoText] = useState('') // Initialize with an empty string
+    
     const { addTodo } = useTodo()
 
     const add = (e) => {
@@ -15,7 +16,7 @@ function TodoForm() {
         if (!trimmedText) return
 
         // Add todo
-        addTodo({ todo: trimmedText, completed: false })
+        addTodo({ todo: trimmedText, completed: false, time: new Date().toLocaleString() })
 
         // Clear input field after adding todo
         setTodoText('')
